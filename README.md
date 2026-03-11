@@ -29,7 +29,7 @@ Scheduled tasks are thin dispatchers that read `program.md` at runtime.
 
 ## Documentation Site
 
-The live documentation site is deployed at [nova-loop.vercel.app](https://nova-loop.vercel.app) and covers:
+The live documentation site is deployed at [nova-loop-cflw.vercel.app](https://nova-loop-cflw.vercel.app) and covers:
 
 - **Architecture** — File structure, session split, nightly timeline, phase details
 - **Recursive Properties** — The five feedback loops and how they compound
@@ -47,4 +47,4 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## License
 
-Open architecture. See the [Reproduce](https://nova-loop.vercel.app/reproduce) page for setup instructions.
+Open architecture. See the [Reproduce](https://nova-loop-cflw.vercel.app/reproduce) page for setup instructions.
