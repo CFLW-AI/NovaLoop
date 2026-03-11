@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   description:
     "Architecture documentation for AutoResearch, an autonomous nightly research synthesis system that compounds insight quality across iterations through five recursive feedback loops.",
   openGraph: {
+    siteName: "AutoResearch",
     title: "AutoResearch: A Recursive Research Synthesis Engine",
     description:
       "An autonomous nightly research synthesis system that compounds insight quality across iterations through five recursive feedback loops.",
