@@ -4,5 +4,8 @@
   "scripts": {
     "build": "cd docs && npm install && npm run build",
     "dev": "cd docs && npm run dev"
+  },
+  "dependencies": {
+    "next": "16.1.6"
   }
 }
