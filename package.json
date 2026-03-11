@@ -1,0 +1,8 @@
+{
+  "name": "auto-research",
+  "private": true,
+  "scripts": {
+    "build": "cd docs && npm install && npm run build",
+    "dev": "cd docs && npm run dev"
+  }
+}
