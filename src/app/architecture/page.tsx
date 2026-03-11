@@ -33,7 +33,7 @@ export default function ArchitecturePage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <div className="rounded-lg border border-border bg-surface p-6">
-            <h3 className="font-mono text-sm text-accent mb-3">SESSION A — 9:30 PM</h3>
+            <h3 className="font-mono text-sm text-accent mb-3">SESSION A</h3>
             <ul className="text-sm text-muted space-y-2">
               <li>Cold Start corpus rotation</li>
               <li>Phase 1: Frontier-driven wide synthesis</li>
@@ -42,7 +42,7 @@ export default function ArchitecturePage() {
             </ul>
           </div>
           <div className="rounded-lg border border-border bg-surface p-6">
-            <h3 className="font-mono text-sm text-accent mb-3">SESSION B — 11:00 PM</h3>
+            <h3 className="font-mono text-sm text-accent mb-3">SESSION B — ~30 min later</h3>
             <ul className="text-sm text-muted space-y-2">
               <li>Phase 3: Adversarial stress test</li>
               <li>Phase 4: Meta-synthesis + frontier update</li>
@@ -137,13 +137,17 @@ export default function ArchitecturePage() {
       {/* Databases */}
       <section className="mb-16">
         <h2 className="text-2xl font-bold mb-6">Database Architecture</h2>
+        <p className="text-sm text-muted mb-6 max-w-xl">
+          The system uses six interconnected databases. Each serves a distinct
+          role in the research pipeline and cross-iteration memory.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <DbCard name="Sources" icon="📚" count="1,600+" purpose="Research corpus — papers, articles, reports across 15 topic categories" />
-          <DbCard name="Output" icon="💭" count="Growing" purpose="All generated insights with type taxonomy, source relations, and full evidence" />
-          <DbCard name="Inbox" icon="📬" count="Nightly" purpose="Check-in pages and weekly syntheses — the human interface" />
-          <DbCard name="Framework Registry" icon="🧩" count="10+" purpose="Emergent analytical frameworks with lifecycle: Candidate → Emerged → Active Lens" />
-          <DbCard name="Design Observations" icon="🔧" count="Per-run" purpose="System self-observations: Proposed → Reviewed → Accepted → Implemented" />
-          <DbCard name="Questions Log" icon="📋" count="1 page" purpose="Full history of every frontier question explored, with status transitions" />
+          <DbCard name="Source Corpus" purpose="Research papers, articles, and reports organized by topic category. Tracks URLs to prevent re-retrieval across iterations." />
+          <DbCard name="Insight Output" purpose="All generated insights with type taxonomy (mechanism, tension, pattern, bridge, etc.), source relations, and evidence chains." />
+          <DbCard name="Human Interface" purpose="Check-in pages and weekly syntheses delivered to the researcher. Contains annotation blocks for steering." />
+          <DbCard name="Framework Registry" purpose="Emergent analytical frameworks with lifecycle management: Candidate, Emerged, Active Lens, Boundary Mapped, Superseded." />
+          <DbCard name="Design Observations" purpose="System self-observations about methodology improvements: Proposed, Reviewed, Accepted, Implemented / Deferred / Rejected." />
+          <DbCard name="Questions Log" purpose="Complete history of every frontier question explored, with status transitions and retirement reasons." />
         </div>
       </section>
     </div>
@@ -152,22 +156,14 @@ export default function ArchitecturePage() {
 
 function DbCard({
   name,
-  icon,
-  count,
   purpose,
 }: {
   name: string;
-  icon: string;
-  count: string;
   purpose: string;
 }) {
   return (
     <div className="rounded border border-border bg-surface p-4">
-      <div className="flex items-center gap-2 mb-2">
-        <span className="text-lg">{icon}</span>
-        <span className="font-medium text-sm">{name}</span>
-        <span className="ml-auto text-xs text-muted font-mono">{count}</span>
-      </div>
+      <span className="font-medium text-sm block mb-2">{name}</span>
       <p className="text-xs text-muted leading-relaxed">{purpose}</p>
     </div>
   );

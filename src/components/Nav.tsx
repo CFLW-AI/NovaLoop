@@ -8,6 +8,7 @@ const links = [
   { href: "/architecture", label: "Architecture" },
   { href: "/recursion", label: "Recursion" },
   { href: "/reproduce", label: "Reproduce" },
+  { href: "/about", label: "About" },
 ];
 
 export function Nav() {

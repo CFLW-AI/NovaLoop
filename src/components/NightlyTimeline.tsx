@@ -2,60 +2,60 @@
 
 const phases = [
   {
-    time: "9:30 PM",
+    order: "1",
     session: "A",
     label: "Cold Start",
     color: "#737373",
-    description: "Surface 3-5 underused sources from the corpus to prevent frontier convergence",
+    description: "Surface underused sources from the corpus to prevent frontier convergence.",
   },
   {
-    time: "9:45 PM",
+    order: "2",
     session: "A",
     label: "Phase 1",
     color: "#3b82f6",
-    description: "Search top 3-5 frontier questions (3 angles each, 10-15 sources per cluster). Apply 3D Matrix. Output: 3-5 insights.",
+    description: "Search top frontier questions from multiple angles. Apply the 3D Outcome Matrix. Output: grounded insights with full source linking.",
   },
   {
-    time: "10:15 PM",
+    order: "3",
     session: "A",
     label: "Phase 2",
     color: "#8b5cf6",
-    description: "Bridge 3 discipline combinations not covered in Phase 1. Output: 3-5 cross-domain insights.",
+    description: "Bridge discipline combinations not covered in Phase 1. Output: cross-domain insights.",
   },
   {
-    time: "10:45 PM",
+    order: "4",
     session: "A",
     label: "Handoff",
     color: "#737373",
-    description: "Write session_handoff.json with all insight URLs, key evidence, and 2-3 strongest hypotheses for stress testing.",
+    description: "Write session_handoff.json with all insight URLs, key evidence, and strongest hypotheses for stress testing.",
   },
   {
-    time: "11:00 PM",
+    order: "5",
     session: "B",
     label: "Phase 3",
     color: "#ef4444",
-    description: "Adversarial stress test: search for contradicting evidence, null results, boundary conditions on the 2 strongest claims.",
+    description: "Adversarial stress test: search for contradicting evidence, null results, and boundary conditions on the strongest claims.",
   },
   {
-    time: "11:30 PM",
+    order: "6",
     session: "B",
     label: "Phase 4",
     color: "#f59e0b",
-    description: "Meta-synthesis across all tonight's insights. Update frontier: retire 2-3 questions, replace with sharper versions.",
+    description: "Meta-synthesis across all of the night's insights. Update frontier: retire questions, replace with sharper versions.",
   },
   {
-    time: "11:45 PM",
+    order: "7",
     session: "B",
     label: "Phase 4.5",
     color: "#10b981",
     description: "Self-monitoring: record design observations and detect emergent frameworks for the registry.",
   },
   {
-    time: "12:00 AM",
+    order: "8",
     session: "B",
     label: "Phase 5",
     color: "#06b6d4",
-    description: "Create check-in page: 3 provocations, full insight summaries, updated frontier, annotation callouts for human steering.",
+    description: "Create check-in page: provocations, full insight summaries, updated frontier, and annotation callouts for human steering.",
   },
 ];
 
@@ -69,7 +69,7 @@ export function NightlyTimeline() {
         {phases.map((phase, i) => (
           <div key={i} className="flex gap-6 items-start animate-fade-in" style={{ animationDelay: `${i * 0.08}s`, opacity: 0 }}>
             <div className="w-[72px] text-right shrink-0">
-              <span className="text-xs font-mono text-muted">{phase.time}</span>
+              <span className="text-xs font-mono text-muted">Step {phase.order}</span>
             </div>
 
             {/* Dot */}
