@@ -3,3 +3,9 @@ node_modules/
 .vercel/
 *.tsbuildinfo
 next-env.d.ts
+
+# Operational files (contain Notion IDs and personal data)
+program.md
+reference.md
+state.json
+session_handoff.json
