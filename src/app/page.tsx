@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero */}
       <section className="text-center mb-20 animate-fade-in">
         <h1 className="text-5xl font-bold tracking-tight mb-6">
-          Auto<span className="text-accent">Research</span>
+          Nova<span className="text-accent">Loop</span>
         </h1>
         <p className="text-xl text-muted max-w-2xl mx-auto leading-relaxed mb-4">
           An autonomous nightly research synthesis engine that compounds
