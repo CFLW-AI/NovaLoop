@@ -14,9 +14,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AutoResearch — Recursive Research Synthesis Engine",
+  title: "AutoResearch: A Recursive Research Synthesis Engine",
   description:
     "Architecture documentation for AutoResearch, an autonomous nightly research synthesis system that compounds insight quality across iterations through five recursive feedback loops.",
+  openGraph: {
+    title: "AutoResearch: A Recursive Research Synthesis Engine",
+    description:
+      "An autonomous nightly research synthesis system that compounds insight quality across iterations through five recursive feedback loops.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "AutoResearch: A Recursive Research Synthesis Engine",
+    description:
+      "An autonomous nightly research synthesis system that compounds insight quality across iterations through five recursive feedback loops.",
+  },
 };
 
 export default function RootLayout({
