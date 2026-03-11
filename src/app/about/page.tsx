@@ -47,12 +47,12 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* About AutoResearch */}
+      {/* About NovaLoop */}
       <section className="mt-20">
-        <h2 className="text-2xl font-bold mb-6">About AutoResearch</h2>
+        <h2 className="text-2xl font-bold mb-6">About NovaLoop</h2>
         <div className="max-w-3xl space-y-4">
           <p className="text-sm text-muted leading-relaxed">
-            AutoResearch is an autonomous nightly research synthesis system
+            NovaLoop is an autonomous nightly research synthesis system
             built with Claude Code and Notion. It compounds insight quality
             across iterations through five recursive feedback loops, producing
             adversarially tested, evidence-linked research insights every night.

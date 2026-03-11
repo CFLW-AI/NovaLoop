@@ -14,19 +14,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AutoResearch: A Recursive Research Synthesis Engine",
+  title: "NovaLoop: A Recursive Research Synthesis Engine",
   description:
-    "Architecture documentation for AutoResearch, an autonomous nightly research synthesis system that compounds insight quality across iterations through five recursive feedback loops.",
+    "Architecture documentation for NovaLoop, an autonomous nightly research synthesis system that compounds insight quality across iterations through five recursive feedback loops.",
   openGraph: {
-    siteName: "AutoResearch",
-    title: "AutoResearch: A Recursive Research Synthesis Engine",
+    siteName: "NovaLoop",
+    title: "NovaLoop: A Recursive Research Synthesis Engine",
     description:
       "An autonomous nightly research synthesis system that compounds insight quality across iterations through five recursive feedback loops.",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "AutoResearch: A Recursive Research Synthesis Engine",
+    title: "NovaLoop: A Recursive Research Synthesis Engine",
     description:
       "An autonomous nightly research synthesis system that compounds insight quality across iterations through five recursive feedback loops.",
   },
@@ -46,12 +46,12 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <footer className="border-t border-border py-12 px-6 text-center text-muted text-sm">
           <p>
-            AutoResearch is an open architecture. Built with Claude Code +
+            NovaLoop is an open architecture. Built with Claude Code +
             Notion MCP.
           </p>
           <p className="mt-2">
             <a
-              href="https://github.com/CFLW-AI/AutoResearch"
+              href="https://github.com/CFLW-AI/NovaLoop"
               className="text-accent hover:underline"
               target="_blank"
               rel="noopener noreferrer"

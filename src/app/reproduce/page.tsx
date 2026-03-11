@@ -5,7 +5,7 @@ export default function ReproducePage() {
         Reproduce This System
       </h1>
       <p className="text-muted mb-12 max-w-2xl animate-fade-in delay-1">
-        AutoResearch is fully reproducible. The entire system is four text
+        NovaLoop is fully reproducible. The entire system is four text
         files, a Notion workspace, and Claude Code scheduled tasks. Here&apos;s
         how to set it up from scratch.
       </p>
@@ -58,7 +58,7 @@ export default function ReproducePage() {
           <Step number={2} title="Create the four core files">
             <p className="mb-3">
               These live in a project directory (e.g.,{" "}
-              <code className="text-accent">~/AutoResearch/</code>). All four
+              <code className="text-accent">~/NovaLoop/</code>). All four
               are plain text &mdash; no build step, no dependencies.
             </p>
             <div className="space-y-2">

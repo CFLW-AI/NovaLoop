@@ -5,7 +5,7 @@ export default function RecursionPage() {
         Recursive Properties
       </h1>
       <p className="text-muted mb-12 max-w-2xl animate-fade-in delay-1">
-        AutoResearch compounds insight quality across iterations through five
+        NovaLoop compounds insight quality across iterations through five
         nested feedback loops. Each loop operates at a different timescale,
         creating a system that genuinely improves over time.
       </p>
@@ -16,7 +16,7 @@ export default function RecursionPage() {
         <div className="rounded-lg border border-border bg-surface p-6 max-w-3xl">
           <p className="text-sm text-muted leading-relaxed mb-4">
             Most AI research tools are stateless &mdash; every query starts from
-            zero. AutoResearch inverts this by making every output feed back
+            zero. NovaLoop inverts this by making every output feed back
             into the next iteration&apos;s inputs. The system&apos;s questions
             sharpen, its analytical vocabulary grows, and its source diversity
             expands &mdash; all without manual intervention.

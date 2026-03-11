@@ -31,7 +31,7 @@ export function FileTree() {
   return (
     <div className="rounded-lg border border-border bg-surface p-6">
       <div className="flex items-center gap-2 mb-4">
-        <span className="text-muted font-mono text-xs">~/AutoResearch/</span>
+        <span className="text-muted font-mono text-xs">~/NovaLoop/</span>
       </div>
       <div className="space-y-3">
         {files.map((file) => (
